@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val emailEt = findViewById<EditText>(R.id.emailEt)
         val phoneEt = findViewById<EditText>(R.id.phoneEt)
         val saveBtn = findViewById<Button>(R.id.saveBtn)
+        val mainFunctionalityBtn = findViewById<Button>(R.id.mainFunctionalityBtn)
 
         saveBtn.setOnClickListener{
             val name = nameEt.text.toString()
@@ -32,6 +33,12 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("Phone", phone)
             startActivity(intent)
 
+        }
+
+        mainFunctionalityBtn.setOnClickListener{
+            val intent = Intent(this, LandingPageActivity::class.java)
+
+            startActivity(intent)
         }
 
         var intent = intent
