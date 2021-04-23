@@ -11,9 +11,9 @@ class AddExpensesActivity : AppCompatActivity() {
 
         val exampleList = generateDummyList(500)
 
-        recycler_view.adapter = ExampleAdapter(exampleList)
-        recycler_view.layoutManager = LinearLayoutManager(this)
-        recycler_view.setHasFixedSize(true)
+//        recycler_view.adapter = ExampleAdapter(exampleList)
+//        recycler_view.layoutManager = LinearLayoutManager(this)
+//        recycler_view.setHasFixedSize(true)
     }
 
     private fun generateDummyList(size: Int): List<ExampleItem>{
